@@ -1,9 +1,9 @@
-# README.md for Bug Hunter
+# README.md for Hunt3rX
 
-## 🐾 Bug Hunter
+## 🐾 Hunt3rX
 **Made by P4nTh3r**
 
-Bug Hunter is an automated bug bounty reconnaissance and scanning toolkit designed to streamline the process of subdomain enumeration, port scanning, vulnerability detection, and more — all in one script.
+Hunt3rX is an automated bug bounty reconnaissance and scanning toolkit designed to streamline the process of subdomain enumeration, port scanning, vulnerability detection, and more — all in one script.
 
 ---
 
