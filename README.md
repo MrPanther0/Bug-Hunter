@@ -1,60 +1,108 @@
-# README.md for Hunt3rX
+# Hunt3rX 🔍🐾  
+**Advanced Bug Bounty & Penetration Testing Automation Framework**
 
-## 🐾 Hunt3rX
-**Made by P4nTh3r**
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)  
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+[![Stars](https://img.shields.io/github/stars/YourUsername/Hunt3rX?style=social)](https://github.com/YourUsername/Hunt3rX/stargazers)  
+[![Last Commit](https://img.shields.io/github/last-commit/YourUsername/Hunt3rX)](https://github.com/YourUsername/Hunt3rX/commits/main)
 
-Hunt3rX is an automated bug bounty reconnaissance and scanning toolkit designed to streamline the process of subdomain enumeration, port scanning, vulnerability detection, and more — all in one script.
 
----
+## 🛡 Overview
+Hunt3rX is an **all-in-one recon and vulnerability scanning toolkit** designed for **bug bounty hunters, penetration testers, and red teamers**.  
+It automates tedious recon steps, integrates multiple scanning phases, and supports **custom payloads** for personalized testing.
 
-### Features
-- **Subdomain Enumeration** using subfinder, amass, and assetfinder.
-- **Port Scanning** with nmap and masscan.
-- **Web Recon** with screenshots, directory brute-forcing, and content discovery.
-- **JavaScript Analysis** and **Parameter Discovery**.
-- **Vulnerability Testing** for XSS, SQLi, LFI/RFI, SSRF, Open Redirects.
-- **API Recon, CMS Detection, WAF Detection**.
-- **S3 Bucket Enumeration & Information Disclosure Scans**.
-- **Metasploit & Reverse Shell Automation**.
+> ⚠ **Educational Use Only:** Unauthorized scanning may be illegal.
 
----
 
-### Requirements
-**Python Packages** (install with `pip install -r requirements.txt`):
+
+## ✨ Features
+
+| Category                 | Capabilities                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Reconnaissance**        | Subdomain enumeration (passive + active), DNS resolution, port scanning    |
+| **Content Discovery**     | Directory brute-forcing, parameter fuzzing, API endpoint detection          |
+| **Vulnerability Testing** | XSS, SQL Injection, SSRF, LFI/RFI, Open Redirect, Header security checks    |
+| **File & Secrets Detection** | JS file analysis, information disclosure scan, cloud bucket finder        |
+| **Automation Extras**     | WAF detection, CMS identification, reverse shell template generation       |
+| **Integration**           | Compatible with Nmap, FFUF, Nuclei, Dalfox, and custom scripts             |
+
+
+
+## 📂 Project Structure
+```plaintext
+Hunt3rX/
+├── hunt3rx.py                 # Main script
+├── hunt3rx_payloads/           # Payload files
+│   ├── xss.txt
+│   ├── sqli.txt
+│   ├── open_redirect.txt
+│   ├── lfi.txt
+│   └── fuzz_dirs.txt
+└── output/                    # Generated reports
+
 ```
-requests
-colorama
-tqdm
-```
+## ⚡ Installation
 
-**External Tools**:
-subfinder, amass, assetfinder, nmap, masscan, eyewitness, aquatone, ffuf, gobuster, linkfinder, gf, paramspider, arjun, dalfox, XSStrike, sqlmap, gopherus, interactsh-client, lfisuite, fimap, oralyzer, nikto, httpx, kiterunner, gau, waybackurls, AWSBucketDump, cmseek, wafw00f, GitDumper, msfvenom, msfconsole.
-
----
-
-### Installation
+1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourusername/bug-hunter.git
-cd bug-hunter
-pip install -r requirements.txt
+git clone https://github.com/YourUsername/Hunt3rX.git
+cd Hunt3rX
 ```
+2️⃣ Install dependencies
 
----
-
-### Usage
 ```bash
-python3 bug_hunter.py -d target.com
+python3 hunt3rx.py --install
 ```
-Optional flags:
-- `--skip` to skip specific phases
-- `--only` to run specific phases
-- `--threads` to control concurrency
+This will:
 
----
+- Create the output/ folder.
+- Download and set up required external tools.
+- Create default payload templates.
 
-### Disclaimer
-This tool is for **educational purposes only**. Do not use it without explicit permission from the target owner.
 
----
+## 🚀 Usage
 
-**Author:** P4nTh3r
+```bash
+python3 hunt3rx.py -d target.com
+
+```
+
+
+### Options
+
+| Flag            | Description                         |
+|-----------------|-------------------------------------|
+| `-d`            | Target domain                       |
+| `--install`     | Run the initial setup               |
+| `--payload-dir` | Use custom payload directory        |
+| `--no-banner`   | Disable ASCII banner                |
+| `-h`            | Show help menu                      |
+
+## 🛠 Examples
+
+- **Full recon + vulnerability scan:**
+  ```bash
+  python3 hunt3rx.py -d example.com
+- **Using custom payloads:**
+
+    ```bash
+    python3 hunt3rx.py -d example.com --payload-dir ~/payloads
+
+- Silent mode without banner:
+
+    ```bash
+    python3 hunt3rx.py -d example.com --no-banner
+
+## 📜 License
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+
+
+## ⚠ Disclaimer
+**Hunt3rX** is intended for authorized security testing and educational purposes only.  
+You are solely responsible for how you use this tool.
+
+
+
+## 👤 Author
+**Saurav Prajapati** (*P4nTh3r*)
