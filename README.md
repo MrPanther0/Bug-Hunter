@@ -3,8 +3,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)  
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
-[![Stars](https://img.shields.io/github/stars/YourUsername/Hunt3rX?style=social)](https://github.com/YourUsername/Hunt3rX/stargazers)  
-[![Last Commit](https://img.shields.io/github/last-commit/YourUsername/Hunt3rX)](https://github.com/YourUsername/Hunt3rX/commits/main)
+[![Stars](https://img.shields.io/github/stars/MrPanther0/Hunt3rX?style=social)](https://github.com/MrPanther0/Hunt3rX/stargazers)  
+[![Last Commit](https://img.shields.io/github/last-commit/MrPanther0/Hunt3rX)](https://github.com/MrPanther0/Hunt3rX/commits/main)
 
 
 ## 🛡 Overview
